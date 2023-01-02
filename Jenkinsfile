@@ -13,7 +13,7 @@ pipeline {
                                                }
                          stage('git clone') {
                                               steps {
-                                         git credentialsId: 'github', url:'https://github.com/ahiresnehal/simpleapp.git'
+                                         git credentialsId: 'github', url:'https://github.com/ahiresnehal/httpbin-1.git'
                                                         }
                                                         }
             

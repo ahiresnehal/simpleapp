@@ -10,12 +10,12 @@ pipeline {
                                      steps {
                                                echo 'Hello World'
                                                }
-                                               }
+                                           }
                          stage('git clone') {
-                                              steps {
-                                         git credentialsId: 'github', url:'https://github.com/ahiresnehal/simpleapp.git'
-                                                        }
-                                                        }
+                                     steps {
+                                               git credentialsId: 'github', url:'https://github.com/ahiresnehal/simpleapp.git'
+                                                }
+                                           }
             
        /* stage('Docker Build and Tag') {
                                               steps {

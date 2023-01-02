@@ -11,11 +11,11 @@ pipeline {
                                                echo 'Hello World'
                                                }
                                                }
-                         stage('git clone') {
+                         /*stage('git clone') {
                                               steps {
                                          git credentialsId: 'github1', url:'https://github.com/ahiresnehal/simpleapp.git'
                                                         }
-                                                        }
+                                                        }*/
             
        /* stage('Docker Build and Tag') {
                                               steps {

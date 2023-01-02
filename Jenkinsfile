@@ -13,11 +13,11 @@ pipeline {
                                                }
                          stage('git clone') {
                                               steps {
-                                         git credentialsId: 'github', url: 'https://github.com/ahiresnehal/httpbin-1.git'
+                                         git credentialsId: 'github', url: 'https://github.com/ahiresnehal/simpleapp.git'
                                                         }
                                                         }
             
-        stage('Docker Build and Tag') {
+       /* stage('Docker Build and Tag') {
                                               steps {
                                                    //sh 'docker build -t nginxt:latest .' 
                                                      //sh 'docker build -t demo2:latest .' 
@@ -28,15 +28,15 @@ pipeline {
                                                  sh 'docker tag nginxtest snehalahire123/nginxtest:latest'
                                                  sh 'docker tag nginxtest snehalahire123/nginxtest:$BUILD_NUMBER'
                                                        }
-                                                       }
-        stage('Publish image to Docker Hub') {
+                                                       }*/
+        /*stage('Publish image to Docker Hub') {
                                                           steps {
                                                              withDockerRegistry([ credentialsId: "dockerhub", url: "" ]) {
                                                              sh 'docker push snehalahire123/nginxtest:latest'
                                                               //sh 'docker push snehalahire123/nginxte:$BUILD_NUMBER' 
                                                               }
                                                               }
-                                                              }
+                                                              }*/
        /* stage('deploy to rancher') {
                                        steps {
                                         script{
